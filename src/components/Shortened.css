@@ -1,0 +1,55 @@
+.shortened-box {
+    background-color: white;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--very-dark-violet);
+    padding: 15px 40px;
+    border-radius: 6px;
+}
+
+.shortened-box button {
+    font-family: 'Poppins';
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 6px 12px;
+    width: fit-content;
+  }
+
+.shortened-box a {
+    color: var(--cyan);
+    text-decoration: none;
+}
+
+.shortened-box span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.shortened {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.shortened button {
+    width: 8em;
+}
+
+.copy {
+    background-color: var(--cyan);
+    cursor: pointer;
+}
+
+.copied {
+    background-color: var(--dark-violet);
+    cursor: default;
+}
+
+.copied:hover {
+    background-color: var(--dark-violet);
+    cursor: default;
+}

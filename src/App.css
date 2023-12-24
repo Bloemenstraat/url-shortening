@@ -1,0 +1,323 @@
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+nav .left, nav .right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--grayish-violet);
+}
+
+nav a:hover {
+  color: var(--dark-violet);
+}
+
+nav img {
+  margin: 0 24px;
+}
+
+nav button, .hero button, .shortening-box button, .boost button {
+  font-family: 'Poppins';
+  color: white;
+  background-color: var(--cyan);
+  border: none;
+  border-radius: 12px;
+  padding: 6px 12px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+button:hover {
+  background-color: #50ebeb;
+}
+
+/**********************************************/
+/*-----             HERO                ------*/
+/**********************************************/
+
+.hero {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 100px 0;
+}
+
+.hero button {
+  width: 30%;
+  height: 3em;
+  border-radius: 24px;  
+  font-size: 1em;
+}
+
+.hero .left {
+  padding: 0 5.5em;
+}
+
+.hero .left {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero h1 {
+  color: var(--very-dark-violet);
+  font-size: 3em;
+  line-height: 1em;
+
+}
+
+.hero p {
+  color: var(--grayish-violet);
+
+}
+
+.hero img {
+  width: 40%;
+}
+
+/**********************************************/
+/*-----             shortening          ------*/
+/**********************************************/
+
+.shortening-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: -50px;
+}
+
+.shortening-section button:disabled {
+  background-color: #50ebeb;
+  cursor: default;
+}
+
+.shortening-box {
+  width: 80%;
+  height: 100px;
+  background-image: url('./assets/bg-shorten-desktop.svg');
+  background-color: var(--dark-violet);
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.shortening-box input {
+  font-family: 'Poppins';
+  background-color: white;
+  color: black;
+  width: 70%;
+  height: 35%;
+  border-radius: 12px;
+  padding-left: 24px;
+}
+
+.normal {
+  border: none;
+}
+
+.error {
+  border: 1px var(--red) solid;
+}
+
+.error::placeholder {
+  color: var(--soft-red);
+}
+
+.error-message::after {
+  content: 'Please add a valid link';
+  position: absolute;
+  color: var(--red);
+  font-size: 0.8em;
+  bottom: 10%;
+  left: 8%;
+} 
+
+.shortening-box button {
+  width: 15%;
+  height: 35%;
+}
+
+/**********************************************/
+/*-----             Statistics          ------*/
+/**********************************************/
+
+.statistics-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 150px 0;
+  gap: 110px;
+}
+
+.statistics-section h2 {
+  color: var(--very-dark-violet);
+  margin-bottom: 10px;
+}
+
+.statistics-section p {
+  color: var(--grayish-violet);
+}
+
+.statistics-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.statistic-cards {
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.backline {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: var(--cyan);
+  top: 50%;
+  transform: translateY(-3px);
+}
+
+.stat-card {
+  width: 300px;
+  height: 220px;
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 12px 0 12px 12px;
+  position: relative;
+}
+
+.stat-card h4 {
+  font-size: 1.2em;
+  color: var(--very-dark-violet);
+}
+
+.stat-card img {
+  background-color: var(--dark-violet);
+  border-radius: 50%;
+  padding: 18px;
+  width: 80px;
+  position: absolute;
+  top: -40px;
+  left: 20px;
+}
+
+.stat-card:last-child {
+  margin-top: 20px;
+}
+
+/**********************************************/
+/*-----             Boost              ------*/
+/**********************************************/
+
+.boost {
+  width: 100%;
+  background-image: url('./assets/bg-shorten-desktop.svg');
+  background-size: 100% 100%;
+  background-color: var(--dark-violet);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 48px 0;
+}
+
+h2 {
+  font-size: 1.9em;
+}
+
+.boost button {
+  width: 15%;
+  height: 3em;
+  border-radius: 24px;  
+  font-size: 1em;
+}
+
+
+
+/**********************************************/
+/*-----             Footer              ------*/
+/**********************************************/
+
+
+footer {
+  background-color: var(--very-dark-violet);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  padding: 70px 0;
+}
+
+.footer-space {
+  width: 10%;
+}
+
+footer img {
+  height: 3em;
+  filter : brightness(0) saturate(100%) invert(99%) sepia(99%) saturate(0%) hue-rotate(138deg) brightness(102%) contrast(102%);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-links h6 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--gray);
+}
+
+.footer-links a:hover {
+  color: var(--cyan);
+}
+
+footer .footer-socials {
+  display: flex;
+  gap: 40px;
+}
+
+footer .footer-socials img {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+}
+
+footer .footer-socials img:hover {
+  filter:brightness(0) saturate(100%) invert(92%) sepia(100%) saturate(4374%) hue-rotate(129deg) brightness(86%) contrast(83%)
+}
+
