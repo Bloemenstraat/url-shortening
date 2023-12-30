@@ -15,6 +15,7 @@ export default function Shortened ({ link, shortLink }) {
     return (
         <div className="shortened-box">
             <span>{ link }</span>
+
             <div className="shortened">
                 <a href={`${shortLink}`}>{ shortLink }</a>
                 {copied ? <button className='copied'>Copied !</button> : <button onClick={copyLink} className='copy'>Copy</button> }

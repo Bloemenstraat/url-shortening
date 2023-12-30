@@ -8,7 +8,10 @@ import Pinterest from './assets/icon-pinterest.svg'
 import Instagram from './assets/icon-instagram.svg'
 import Facebook from './assets/icon-facebook.svg'
 import Twitter from './assets/icon-twitter.svg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import './App.css'
+import './Mobile.css'
 import Shortened from './components/Shortened'
 import axios from 'axios'
 
@@ -45,7 +48,7 @@ function App() {
 
     return (
         <>
-            <nav>
+            {/*<nav>
                 <div className="left">
                     <img src={Logo} />
                     <a href="#">Features</a>
@@ -55,6 +58,29 @@ function App() {
                 <div className="right">
                     <a href="#">Login</a>
                     <button>Sign Up</button>
+                </div>
+            </nav>*/}
+
+            <nav>
+                <div className="mobile-bar">
+                    <img src={Logo} />                    
+                    <label for="check">
+                        <FontAwesomeIcon icon={faBars} size="2x" />
+                    </label>
+                </div>
+
+                <input type="checkbox" id="check" />
+
+                <div className="nav-links">
+                    <div className="left">    
+                        <a href="#">Features</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Resources</a>
+                    </div>
+                    <div className="right">
+                        <a href="#">Login</a>
+                        <button>Sign Up</button>
+                    </div>
                 </div>
             </nav>
 

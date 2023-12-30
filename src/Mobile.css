@@ -1,0 +1,223 @@
+@media screen and (max-width: 375px) {
+/**********************************************/
+/*-----             NAVBAR               ------*/
+/**********************************************/
+
+nav {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 0 0 0;
+  }
+
+.mobile-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 24px;
+}
+
+  nav svg {
+    color: var(--gray);
+  }
+  
+  .nav-links {
+    display: none;
+    width: 90%;
+    margin: 20px 20px;
+    padding: 30px 0;
+    background-color: var(--dark-violet);
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    flex-grow: 1;
+    z-index: 99; /* ??? */
+  }
+  
+  nav .left, nav .right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+
+  nav .right {
+    border-top: 1px solid var(--gray);
+    margin-top: 15px;
+    padding-top: 15px;
+    width: 90%;
+  }
+
+  nav button {
+    width: 100%;
+    height: 3em;
+    border-radius: 20px;
+  }
+  
+  nav a {
+    color: white;
+  }
+
+#check:checked ~ .nav-links {
+  display: flex;
+}
+
+/**********************************************/
+/*-----             HERO                ------*/
+/**********************************************/
+.hero {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column-reverse;
+    align-items: center;
+    padding: 100px 0;
+  }
+  
+  .hero button {
+    width: 70%;
+  }
+  
+  .hero .left {
+    padding: 0 1.8em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .hero h1 {
+    font-size: 1.8em;
+    line-height: 1em;
+  }
+  
+  .hero img {
+    width: 90%;
+  }
+
+
+/**********************************************/
+/*-----             Shortening          ------*/
+/**********************************************/
+
+.shortening-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: -50px;
+  }
+  
+  .shortening-box {
+    width: 90%;
+    height: 120px;
+    background-image: url('./assets/bg-shorten-desktop.svg');
+    display: flex;
+    flex-direction: column;
+    padding: 6px 0;
+  }
+  
+  .shortening-box input {
+    width: 90%;
+    height: 35%;
+  }
+    
+  .error-message::after {
+    content: 'Please add a valid link';
+    position: absolute;
+    color: var(--red);
+    font-size: 0.8em;
+    bottom: 10%;
+    left: 8%;
+  } 
+  
+  .shortening-box button {
+    width: 90%;
+    height: 35%;
+  }
+
+
+/**********************************************/
+/*-----             Statistics          ------*/
+/**********************************************/
+
+.statistics-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+    gap: 110px;
+  }
+  
+  .statistics-text {
+    width: 90%;
+  }
+  
+  .statistic-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
+  
+  .backline {
+    position: absolute;
+    width: 6px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-3px);
+  }
+  
+  .stat-card:last-child {
+    margin-top: 0;
+  }
+
+/**********************************************/
+/*-----             Boost              ------*/
+/**********************************************/
+  
+  h2 {
+    font-size: 1.5em;
+    padding: 0 5px;
+  }
+  
+  .boost button {
+    width: 60%;
+  }
+
+
+/**********************************************/
+/*-----             Footer              ------*/
+/**********************************************/
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer img {
+    width: 40%;
+    height: auto;
+ }
+  
+  .footer-links {
+    align-items: center;
+  }
+  
+  footer .footer-socials {
+    gap: 20px;
+  }
+
+  
+}
+
+
